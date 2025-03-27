@@ -1,0 +1,4 @@
+box 1 5 box.3d
+plane 2 10 plane.3d
+sphere 1 20 20 sphere.3d
+cone 1 2 10 10 cone.3d

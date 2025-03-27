@@ -208,53 +208,90 @@ void generateCone(float radius, float height, int slices, int stacks, const stri
 }
 
 
+int processCommand(const vector<string>& args) {
+    string type = args[0];
 
-int main(int argc, char* argv[]) {
-    if ((argc != 5) && (argc != 6) && (argc != 7)) {
-        cerr << "Input inválido." << endl;
+    if (type == "plane") {
+        float length = stof(args[1]);
+        int subdivisions = stoi(args[2]);
+        string filename = args[3];
+        generatePlane(length, subdivisions, filename);
+    }
+    else if (type == "box") {
+        float length = stof(args[1]);
+        int subdivisions = stoi(args[2]);
+        string filename = args[3];
+        generateBox(length, subdivisions, filename);
+    }
+    else if (type == "sphere") {
+        float radius = stof(args[1]);
+        int slices = stoi(args[2]);
+        int stacks = stoi(args[3]);
+        string filename = args[4];
+        generateSphere(radius, slices, stacks, filename);
+    }
+    else if (type == "cone") {
+        float radius = stof(args[1]);
+        float height = stof(args[2]);
+        int slices = stoi(args[3]);
+        int stacks = stoi(args[4]);
+        string filename = args[5];
+        generateCone(radius, height, slices, stacks, filename);
+    }
+    else {
+        cerr << "Figura inválida: " << type << endl;
         return 1;
     }
 
-    string type = argv[1];
+    return 0;
+}
 
-    if (type == "plane") {
-        float length = stof(argv[2]);
-        int subdivisions = stoi(argv[3]);
-        string filename = argv[4];
+vector<string> split(const string& line) {
+    stringstream ss(line);
+    string arg;
+    vector<string> args;
+    while (ss >> arg) {
+        args.push_back(arg);
+    }
+    return args;
+}
 
-        generatePlane(length, subdivisions, filename);
+int main(int argc, char* argv[]) {
+    if (argc < 2) {
+        cerr << "Uso: ./generator <comando> ou ./generator <ficheiro.txt>" << endl;
+        return 1;
     }
 
-    else if (type == "box") {
-        float length = stof(argv[2]);
-        int subdivisions = stoi(argv[3]);
-        string filename = argv[4];
+    string firstArg = argv[1];
 
-        generateBox(length,subdivisions,filename);
+    if (firstArg.size() > 4 && firstArg.substr(firstArg.size() - 4) == ".txt") {
+        ifstream file(firstArg);
+        if (!file) {
+            cerr << "Erro ao abrir o ficheiro: " << firstArg << endl;
+            return 1;
+        }
+
+        string line;
+        while (getline(file, line)) {
+            if (line.empty()) continue;
+            vector<string> args = split(line);
+            if (!args.empty()) {
+                if (processCommand(args) != 0) {
+                    cerr << "Erro ao processar comando: " << line << endl;
+                }
+            }
+        }
+
+        file.close();
     }
-
-    else if (type == "sphere") {
-        float raio = stof(argv[2]);
-        int fatias = stoi(argv[3]);
-        int stacks = stoi(argv[4]);
-        string filename = argv[5];
-
-        generateSphere(raio,fatias,stacks,filename);
-    }
-
-    else if (type == "cone") {
-        float radius = stof(argv[2]);
-        float height = stof(argv[3]);
-        int slices = stoi(argv[4]);
-        int stacks = stoi(argv[5]);
-        string filename = argv[6];
-    
-        generateCone(radius, height, slices, stacks, filename);
-    }
-    
     else {
-        cerr << "Figura inválida." << endl;
+        vector<string> args;
+        for (int i = 1; i < argc; ++i) {
+            args.push_back(argv[i]);
+        }
+        return processCommand(args);
     }
 
     return 0;
-}   
+}
+
