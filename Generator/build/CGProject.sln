@@ -24,6 +24,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vc
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "run", "run.vcxproj", "{CE907CBB-1459-39AE-BDBF-4E5146B81952}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CF42B247-D412-3141-BD0D-9EF93143FE43} = {CF42B247-D412-3141-BD0D-9EF93143FE43}
+		{7BEF7A4C-4B50-3BA3-902E-3A1F185E2305} = {7BEF7A4C-4B50-3BA3-902E-3A1F185E2305}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -60,6 +66,10 @@ Global
 		{7BEF7A4C-4B50-3BA3-902E-3A1F185E2305}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
 		{7BEF7A4C-4B50-3BA3-902E-3A1F185E2305}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
 		{7BEF7A4C-4B50-3BA3-902E-3A1F185E2305}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{CE907CBB-1459-39AE-BDBF-4E5146B81952}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE907CBB-1459-39AE-BDBF-4E5146B81952}.Release|Win32.ActiveCfg = Release|Win32
+		{CE907CBB-1459-39AE-BDBF-4E5146B81952}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{CE907CBB-1459-39AE-BDBF-4E5146B81952}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8B4DD7DA-14C0-3437-8CA6-352C6DD285D1} = {640E9388-A635-39CA-A195-B12D3A586208}

@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.12+1cce77968 for .NET Framework
-      Build started 25/03/2025 11:00:27.
+      Build started 28/03/2025 16:24:21.
       
       Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.20
+      Time Elapsed 00:00:00.75
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.12+1cce77968 for .NET Framework
-      Build started 25/03/2025 11:00:29.
+      Build started 28/03/2025 16:24:22.
       
       Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.68
+      Time Elapsed 00:00:00.45
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-ex6v85"
-      binary: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-ex6v85"
+      source: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-9zdx82"
+      binary: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-9zdx82"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-ex6v85'
+        Change Dir: 'C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-9zdx82'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f2ef1.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_196da.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.12+1cce77968 for .NET Framework
-        Build started 25/03/2025 11:00:30.
+        Build started 28/03/2025 16:24:23.
         
-        Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ex6v85\\cmTC_f2ef1.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9zdx82\\cmTC_196da.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_f2ef1.dir\\Debug\\".
+          Creating directory "cmTC_196da.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ex6v85\\Debug\\".
-          Creating directory "cmTC_f2ef1.dir\\Debug\\cmTC_f2ef1.tlog\\".
+          Creating directory "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9zdx82\\Debug\\".
+          Creating directory "cmTC_196da.dir\\Debug\\cmTC_196da.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f2ef1.dir\\Debug\\cmTC_f2ef1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_f2ef1.dir\\Debug\\cmTC_f2ef1.tlog\\unsuccessfulbuild".
+          Creating "cmTC_196da.dir\\Debug\\cmTC_196da.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_196da.dir\\Debug\\cmTC_196da.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f2ef1.dir\\Debug\\\\" /Fd"cmTC_f2ef1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_196da.dir\\Debug\\\\" /Fd"cmTC_196da.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler VersÃ£o 19.42.34436 para x86
           Copyright (C) Microsoft Corporation. Todos os direitos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f2ef1.dir\\Debug\\\\" /Fd"cmTC_f2ef1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_196da.dir\\Debug\\\\" /Fd"cmTC_196da.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ex6v85\\Debug\\cmTC_f2ef1.exe" /INCREMENTAL /ILK:"cmTC_f2ef1.dir\\Debug\\cmTC_f2ef1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-ex6v85/Debug/cmTC_f2ef1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-ex6v85/Debug/cmTC_f2ef1.lib" /MACHINE:X86  /machine:X86 cmTC_f2ef1.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_f2ef1.vcxproj -> C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ex6v85\\Debug\\cmTC_f2ef1.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9zdx82\\Debug\\cmTC_196da.exe" /INCREMENTAL /ILK:"cmTC_196da.dir\\Debug\\cmTC_196da.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-9zdx82/Debug/cmTC_196da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-9zdx82/Debug/cmTC_196da.lib" /MACHINE:X86  /machine:X86 cmTC_196da.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_196da.vcxproj -> C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9zdx82\\Debug\\cmTC_196da.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_f2ef1.dir\\Debug\\cmTC_f2ef1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_f2ef1.dir\\Debug\\cmTC_f2ef1.tlog\\cmTC_f2ef1.lastbuildstate".
-        Done Building Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ex6v85\\cmTC_f2ef1.vcxproj" (default targets).
+          Deleting file "cmTC_196da.dir\\Debug\\cmTC_196da.tlog\\unsuccessfulbuild".
+          Touching "cmTC_196da.dir\\Debug\\cmTC_196da.tlog\\cmTC_196da.lastbuildstate".
+        Done Building Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9zdx82\\cmTC_196da.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.78
+        Time Elapsed 00:00:00.44
         
       exitCode: 0
   -
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-doqci5"
-      binary: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-doqci5"
+      source: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-r9654f"
+      binary: "C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-r9654f"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -221,40 +221,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-doqci5'
+        Change Dir: 'C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-r9654f'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1477a.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_12142.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.12+1cce77968 for .NET Framework
-        Build started 25/03/2025 11:00:31.
+        Build started 28/03/2025 16:24:23.
         
-        Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-doqci5\\cmTC_1477a.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r9654f\\cmTC_12142.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_1477a.dir\\Debug\\".
+          Creating directory "cmTC_12142.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-doqci5\\Debug\\".
-          Creating directory "cmTC_1477a.dir\\Debug\\cmTC_1477a.tlog\\".
+          Creating directory "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r9654f\\Debug\\".
+          Creating directory "cmTC_12142.dir\\Debug\\cmTC_12142.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1477a.dir\\Debug\\cmTC_1477a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1477a.dir\\Debug\\cmTC_1477a.tlog\\unsuccessfulbuild".
+          Creating "cmTC_12142.dir\\Debug\\cmTC_12142.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_12142.dir\\Debug\\cmTC_12142.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1477a.dir\\Debug\\\\" /Fd"cmTC_1477a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_12142.dir\\Debug\\\\" /Fd"cmTC_12142.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler VersÃ£o 19.42.34436 para x86
           Copyright (C) Microsoft Corporation. Todos os direitos reservados.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1477a.dir\\Debug\\\\" /Fd"cmTC_1477a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_12142.dir\\Debug\\\\" /Fd"cmTC_12142.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-doqci5\\Debug\\cmTC_1477a.exe" /INCREMENTAL /ILK:"cmTC_1477a.dir\\Debug\\cmTC_1477a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-doqci5/Debug/cmTC_1477a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-doqci5/Debug/cmTC_1477a.lib" /MACHINE:X86  /machine:X86 cmTC_1477a.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_1477a.vcxproj -> C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-doqci5\\Debug\\cmTC_1477a.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r9654f\\Debug\\cmTC_12142.exe" /INCREMENTAL /ILK:"cmTC_12142.dir\\Debug\\cmTC_12142.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-r9654f/Debug/cmTC_12142.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/build/CMakeFiles/CMakeScratch/TryCompile-r9654f/Debug/cmTC_12142.lib" /MACHINE:X86  /machine:X86 cmTC_12142.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_12142.vcxproj -> C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r9654f\\Debug\\cmTC_12142.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_1477a.dir\\Debug\\cmTC_1477a.tlog\\unsuccessfulbuild".
-          Touching "cmTC_1477a.dir\\Debug\\cmTC_1477a.tlog\\cmTC_1477a.lastbuildstate".
-        Done Building Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-doqci5\\cmTC_1477a.vcxproj" (default targets).
+          Deleting file "cmTC_12142.dir\\Debug\\cmTC_12142.tlog\\unsuccessfulbuild".
+          Touching "cmTC_12142.dir\\Debug\\cmTC_12142.tlog\\cmTC_12142.lastbuildstate".
+        Done Building Project "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r9654f\\cmTC_12142.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.72
+        Time Elapsed 00:00:00.44
         
       exitCode: 0
   -

@@ -67,6 +67,15 @@ target_link_libraries(Engine
 )
 
 
+add_custom_target(run
+    COMMAND ${CMAKE_COMMAND} -E echo "A apagar ficheiros .3d antigos da pasta generator/..."
+    COMMAND ${CMAKE_COMMAND} -E rm -f ${CMAKE_CURRENT_SOURCE_DIR}/build/*.3d
+    COMMAND ${CMAKE_COMMAND} -E echo "A executar Generator com comandos.txt"
+    COMMAND Generator ${CMAKE_CURRENT_SOURCE_DIR}/comandos.txt
+    DEPENDS Generator
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+)
+
 if(WIN32)
     message(STATUS "Using FreeGLUT and tinyxml2 from vcpkg for x86 Windows")
 

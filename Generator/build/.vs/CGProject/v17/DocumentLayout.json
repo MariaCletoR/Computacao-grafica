@@ -4,6 +4,9 @@
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{CF42B247-D412-3141-BD0D-9EF93143FE43}|Generator.vcxproj|C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\Generator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76E7D7F-B23F-3130-AEB7-5F59A66EF1E1}|Engine.vcxproj|C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,8 +16,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "engine.cpp",
+              "DocumentMoniker": "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\engine.cpp",
+              "RelativeDocumentMoniker": "..\\engine.cpp",
+              "ToolTip": "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\engine.cpp",
+              "RelativeToolTip": "..\\engine.cpp",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAkwBABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-27T19:08:12.115Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -23,7 +38,7 @@
               "RelativeDocumentMoniker": "..\\Generator.cpp",
               "ToolTip": "C:\\Users\\mrafa\\OneDrive\\Ambiente de Trabalho\\Uni\\CG\\projeto\\Generator\\Generator.cpp",
               "RelativeToolTip": "..\\Generator.cpp",
-              "ViewState": "AgIAAAABAAAAAAAAAAAswCgBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-25T11:05:43.863Z",
               "EditorCaption": ""

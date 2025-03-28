@@ -1,8 +1,0 @@
-﻿  Building Custom Rule C:/Users/mrafa/OneDrive/Ambiente de Trabalho/Uni/CG/projeto/Generator/CMakeLists.txt
-  Generator.cpp
-C:\Users\mrafa\OneDrive\Ambiente de Trabalho\Uni\CG\projeto\Generator\Generator.cpp(105,22): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\mrafa\OneDrive\Ambiente de Trabalho\Uni\CG\projeto\Generator\Generator.cpp(106,22): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\mrafa\OneDrive\Ambiente de Trabalho\Uni\CG\projeto\Generator\Generator.cpp(109,24): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\mrafa\OneDrive\Ambiente de Trabalho\Uni\CG\projeto\Generator\Generator.cpp(110,24): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\mrafa\OneDrive\Ambiente de Trabalho\Uni\CG\projeto\Generator\Generator.cpp(144,21): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-  Generator.vcxproj -> C:\Users\mrafa\OneDrive\Ambiente de Trabalho\Uni\CG\projeto\Generator\build\Debug\Generator.exe

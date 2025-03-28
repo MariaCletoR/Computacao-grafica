@@ -23,7 +23,7 @@ void writeVerticesToFile(const string& filename, const vector<float>& vertices) 
     }
 
     file.close();
-    cout << "Ficheiro" << filename << "criado"<< endl;
+    cout << "Ficheiro " << filename << " criado"<< endl;
 }
 
 void generateBox(float length, int subdivisions, const string& filename) {
@@ -207,6 +207,39 @@ void generateCone(float radius, float height, int slices, int stacks, const stri
     writeVerticesToFile(filename, vertices);
 }
 
+void generateRing(float innerRadius, float outerRadius, int slices, const string& filename) {
+    vector<float> vertices;
+    float angleStep = 2 * M_PI / slices;
+
+    for (int i = 0; i < slices; i++) {
+        float theta1 = i * angleStep;
+        float theta2 = (i + 1) * angleStep;
+
+        float x1_in = innerRadius * cos(theta1);
+        float z1_in = innerRadius * sin(theta1);
+        float x1_out = outerRadius * cos(theta1);
+        float z1_out = outerRadius * sin(theta1);
+
+        float x2_in = innerRadius * cos(theta2);
+        float z2_in = innerRadius * sin(theta2);
+        float x2_out = outerRadius * cos(theta2);
+        float z2_out = outerRadius * sin(theta2);
+
+        // Triângulo 1
+        vertices.push_back(x1_in); vertices.push_back(0); vertices.push_back(z1_in);
+        vertices.push_back(x2_in); vertices.push_back(0); vertices.push_back(z2_in);
+        vertices.push_back(x1_out); vertices.push_back(0); vertices.push_back(z1_out);
+
+        // Triângulo 2
+        vertices.push_back(x1_out); vertices.push_back(0); vertices.push_back(z1_out);
+        vertices.push_back(x2_in); vertices.push_back(0); vertices.push_back(z2_in);
+        vertices.push_back(x2_out); vertices.push_back(0); vertices.push_back(z2_out);
+    }
+
+    writeVerticesToFile(filename, vertices);
+}
+
+
 
 int processCommand(const vector<string>& args) {
     string type = args[0];
@@ -238,6 +271,15 @@ int processCommand(const vector<string>& args) {
         string filename = args[5];
         generateCone(radius, height, slices, stacks, filename);
     }
+
+    else if (type == "ring") {
+        float inner = stof(args[1]);
+        float outer = stof(args[2]);
+        int slices = stoi(args[3]);
+        string filename = args[4];
+        generateRing(inner, outer, slices, filename);
+    }
+
     else {
         cerr << "Figura inválida: " << type << endl;
         return 1;
