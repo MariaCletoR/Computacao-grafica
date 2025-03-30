@@ -225,12 +225,10 @@ void generateRing(float innerRadius, float outerRadius, int slices, const string
         float x2_out = outerRadius * cos(theta2);
         float z2_out = outerRadius * sin(theta2);
 
-        // Triângulo 1
         vertices.push_back(x1_in); vertices.push_back(0); vertices.push_back(z1_in);
         vertices.push_back(x2_in); vertices.push_back(0); vertices.push_back(z2_in);
         vertices.push_back(x1_out); vertices.push_back(0); vertices.push_back(z1_out);
 
-        // Triângulo 2
         vertices.push_back(x1_out); vertices.push_back(0); vertices.push_back(z1_out);
         vertices.push_back(x2_in); vertices.push_back(0); vertices.push_back(z2_in);
         vertices.push_back(x2_out); vertices.push_back(0); vertices.push_back(z2_out);

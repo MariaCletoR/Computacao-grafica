@@ -4,13 +4,13 @@
     <position x="40" y="60" z="40" />
     <lookAt x="0" y="0" z="0" />
     <up x="0" y="1" z="0" />
-    <projection fov="60" near="1" far="1000" />
+    <projection fov="60" near="1" far="1500" />
   </camera>
 
   <group>
     <!-- Sol -->
     <transform>
-      <scale x="10" y="10" z="10"/>
+      <scale x="24" y="24" z="24"/>
     </transform>
     <models>
       <model file="sol.3d">
@@ -22,7 +22,7 @@
     <group>
       <transform>
         <rotate angle="20" x="0" y="1" z="0"/>
-        <translate x="4" y="0" z="0"/>
+        <translate x="8" y="0" z="0"/>
         <rotate angle="0.1" x="0" y="0" z="1"/>
         <scale x="0.3" y="0.3" z="0.3"/>
       </transform>
@@ -37,7 +37,7 @@
     <group>
       <transform>
         <rotate angle="60" x="0" y="1" z="0"/>
-        <translate x="7" y="0" z="0"/>
+        <translate x="10" y="0" z="0"/>
         <rotate angle="177" x="0" y="0" z="1"/>
         <scale x="0.5" y="0.5" z="0.5"/>
       </transform>
@@ -67,7 +67,7 @@
         <transform>
           <rotate angle="270" x="0" y="1" z="0"/>
           <translate x="2" y="0" z="0"/>
-          <scale x="0.15" y="0.15" z="0.15"/>
+          <scale x="0.30" y="0.30" z="0.30"/>
         </transform>
         <models>
           <model file="lua.3d">
@@ -81,7 +81,7 @@
     <group>
       <transform>
         <rotate angle="140" x="0" y="1" z="0"/>
-        <translate x="18" y="0" z="0"/>
+        <translate x="14" y="0" z="0"/>
         <rotate angle="25" x="0" y="0" z="1"/>
         <scale x="0.4" y="0.4" z="0.4"/>
       </transform>
@@ -96,9 +96,9 @@
     <group>
       <transform>
         <rotate angle="190" x="0" y="1" z="0"/>
-        <translate x="24" y="0" z="0"/>
+        <translate x="17" y="0" z="0"/>
         <rotate angle="3" x="0" y="0" z="1"/>
-        <scale x="1.5" y="1.5" z="1.5"/>
+        <scale x="1.2" y="1.2" z="1.2"/>
       </transform>
       <models>
         <model file="jupiter.3d">
@@ -111,25 +111,38 @@
     <group>
       <transform>
         <rotate angle="240" x="0" y="1" z="0"/>
-        <translate x="32" y="0" z="0"/>
+        <translate x="21" y="0" z="0"/>
         <rotate angle="27" x="0" y="0" z="1"/>
-        <scale x="1.2" y="1.2" z="1.2"/>
+        <scale x="1.0" y="1.0" z="1.0"/>
       </transform>
+
+      <!-- Saturno (o planeta) -->
       <models>
         <model file="saturno.3d">
           <color r="0.849" g="0.81" b="0.89"/>
         </model>
-        <model file="aneis.3d">
-          <color r="0.96" g="0.64" b="0.38"/>
-        </model>
       </models>
+
+    <!-- Anéis (grupo separado) -->
+    <group>
+      <transform>
+        <translate x="0" y="0.01" z="0"/> <!-- ↑ ligeira elevação -->
+        <scale x="1.3" y="1.0" z="1.3"/>   <!-- opcional: escalar os anéis -->
+      </transform>
+        <models>
+          <model file="aneis.3d">
+            <color r="0.96" g="0.64" b="0.38"/>
+          </model>
+        </models>
+      </group>
     </group>
+
 
     <!-- Úrano -->
     <group>
       <transform>
         <rotate angle="290" x="0" y="1" z="0"/>
-        <translate x="38" y="0" z="0"/>
+        <translate x="24" y="0" z="0"/>
         <rotate angle="98" x="0" y="0" z="1"/>
         <scale x="0.9" y="0.9" z="0.9"/>
       </transform>
@@ -144,7 +157,7 @@
     <group>
       <transform>
         <rotate angle="330" x="0" y="1" z="0"/>
-        <translate x="42" y="0" z="0"/>
+        <translate x="26" y="0" z="0"/>
         <rotate angle="31" x="0" y="0" z="1"/>
         <scale x="0.8" y="0.8" z="0.8"/>
       </transform>

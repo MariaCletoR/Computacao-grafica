@@ -166,7 +166,6 @@ void parsexml(const char* file) {
         }
     }
 
-    // Novo: construir a árvore da cena com parseGroup
     XMLElement* groupElem = first->FirstChildElement("group");
     if (groupElem) {
         root = parseGroup(groupElem);
@@ -231,18 +230,20 @@ void changeSize(int w, int h) {
 void drawGroup(const Group& group) {
     glPushMatrix();
 
-    // 1. Rotação da órbita (em torno do Sol)
+    // 1. Órbita
+
     if (!group.transform.rotations.empty())
         glRotatef(group.transform.rotations[0].angle,
             group.transform.rotations[0].axis[0],
             group.transform.rotations[0].axis[1],
             group.transform.rotations[0].axis[2]);
 
-    // 2. Translação da órbita
+
+    // 2. Translação
     if (group.transform.hasTranslate)
         glTranslatef(group.transform.translate[0], 0.0f, group.transform.translate[2]);
 
-    // 3. Inclinação axial (restantes rotações)
+    // 3. Inclinação 
     for (size_t i = 1; i < group.transform.rotations.size(); ++i)
         glRotatef(group.transform.rotations[i].angle,
             group.transform.rotations[i].axis[0],
@@ -253,7 +254,6 @@ void drawGroup(const Group& group) {
     if (group.transform.hasScale)
         glScalef(group.transform.scale[0], group.transform.scale[1], group.transform.scale[2]);
 
-    // 5. Desenhar o modelo
     for (const Model& m : group.models) {
         loadModel(m.file.c_str());
         glColor3f(m.color[0], m.color[1], m.color[2]);
@@ -265,7 +265,6 @@ void drawGroup(const Group& group) {
         vertices.clear();
     }
 
-    // 6. Desenhar filhos
     for (const Group& child : group.children)
         drawGroup(child);
 
@@ -308,7 +307,7 @@ void display() {
 
     //drawAxes();
 
-    drawGroup(root); // agora desenha toda a árvore da cena
+    drawGroup(root); 
 
     glutSwapBuffers();
 }
